@@ -1,38 +1,91 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #3c9ac2, #023136);
+}
+.todoApp-section{
+  background-color: #b4eeee;
+  width:300px;
+  height: 300px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 5px 7px;
+  box-shadow: -2px 10px 50px 6px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.todoApp-section-header{
+  width: 100%;
+  padding: 10px 0 15px ;
+  border-bottom: 1px solid rgba(0,0,0,0.09);
+
+}
+.todoApp-section-header form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-cs{
+  width: 90%;
+  box-sizing: border-box;
+  padding: 6px ;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  background:  rgba(255,255,255,0.5);
+  border-radius: 2px ;
+
+
+
+}
+.input-cs::placeholder{
+  color: rgba(0,0,0,0.5);
 }
 
-.App-link {
-  color: #61dafb;
-}
+.btn-cs{
+  width:10%;
+  box-sizing: border-box;
+  border: 1px solid rgba(255,255,255,0.1);
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background: none;
+  cursor: pointer;
+}
+.btn-cs i {
+  font-size: 20px;
+  color: #066b75;
+  font-weight: 500;
+  cursor: pointer;
+}
+.todoApp-section-list{
+  width: 100%;
+}
+ul{
+  list-style: none;
+  padding: 0;
+
+}
+li{
+  display: flex;
+  justify-content: space-between;
+  margin: 1px 0 7px;
+  font-size: 14px;
+  color: rgba(0,0,0,0.63);
+}
+.todoApp-item i{
+  color: #066b75;
+  cursor: pointer;
+}
+.todoApp-item button{
+  background: none;
+  border: none;
+  outline: none;
+}
+.empty-error{
+  font-size: 14px;
+  color: #023136;
 }
